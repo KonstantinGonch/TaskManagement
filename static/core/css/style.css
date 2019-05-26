@@ -1,0 +1,62 @@
+body {
+    background-color: darkblue;
+}
+
+.left-menu {
+    background-color: #00000077;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    height: 600px;
+    border-radius: 25px;
+}
+
+.right-menu {
+    background-color: #00000077;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    height: 600px;
+    border-radius: 25px;
+}
+
+.left-menu-link {
+    font-size: 30pt;
+    color: white;
+}
+
+.left-menu-link:hover {
+    color:black;
+    text-decoration: none;
+}
+
+.left-menu-link-bg:hover {
+    background-color: #11D30E55;
+}
+
+.left-menu-link-bg {
+    margin-right: 20px!important;
+    border-radius: 10px;
+}
+
+.namespace-title {
+    color: white;
+    width: 100%;
+}
+
+.namespace-title-row {
+    text-align: center;
+}
+
+.namespace-user-name {
+    color : white;
+}
+
+.namespace-users-group {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.project-card {
+    margin-top: 20px;
+}

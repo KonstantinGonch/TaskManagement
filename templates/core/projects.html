@@ -1,0 +1,23 @@
+{% extends "core/core_base.html" %}
+{% block page %}
+    <div class="row mt-4 namespace-title-row">
+        <h1 class="namespace-title">Проекты</h1>
+    </div>
+    <div class="row namespace-users-group">
+        {% for project in projects %}
+            <div class="col-lg-3">
+                <div class="project-card">
+                    <div class="project-header">
+                        <p class="namespace-user-name">{{ project.title }}</p>
+                    </div>
+                    <div class="project-creator">
+                        <p class="namespace-user-name">Создатель: {{ project.creator.full_name }}</p>
+                    </div>
+                    <div class="project-creation-date">
+                        <p class="namespace-user-name">Дата создания: {{ project.creation_date }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+{% endblock %}

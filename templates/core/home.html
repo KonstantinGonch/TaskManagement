@@ -1,0 +1,17 @@
+{% extends "core/core_base.html" %}
+{% block page %}
+    <div class="row mt-4 namespace-title-row">
+        <h1 class="namespace-title">{{ namespace.title }}</h1>
+    </div>
+    <div class="row mt-4 namespace-title-row">
+        <h2 class="namespace-title">Участники</h2>
+        <div class="row namespace-users-group">
+        {% for user in users %}
+            <div class="col-lg-2">
+                <p class="namespace-user-name mb-2">{{ user.full_name }}</p>
+                <p class="namespace-user-name">{{ user.role }}</p>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}
