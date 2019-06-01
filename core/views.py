@@ -22,3 +22,9 @@ def current_projects(request):
     projects = Project.objects.all()
     data["projects"] = projects
     return render(request, "core/projects.html", data)
+
+def current_tasks(request):
+    data = {}
+    tasks = Task.objects.all().order_by("status")
+    data["tasks"]= tasks
+    return render(request, "core/tasks.html", data)
